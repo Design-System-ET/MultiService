@@ -1,0 +1,100 @@
+.slider{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+
+/* Degradado en los bordes */
+
+.slider::before,
+.slider::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:120px;
+    height:100%;
+    z-index:2;
+}
+
+.slider::before{
+    left:0;
+    background:linear-gradient(to right,#fff 0%,transparent 100%);
+}
+
+.slider::after{
+    right:0;
+    background:linear-gradient(to left,#fff 0%,transparent 100%);
+}
+
+.slide-track{
+
+    display:flex;
+    width:max-content;
+    gap:15px;
+
+    animation:scroll 60s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state:paused;
+}
+
+.slide-track img{
+
+    height:180px;
+    width:300px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+    cursor:pointer;
+
+}
+
+.slide-track img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+@keyframes scroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(calc(-315px * 24));
+    }
+
+}
+
+@media (max-width:768px){
+
+    .slide-track img{
+
+        width:220px;
+        height:140px;
+
+    }
+
+    @keyframes scroll{
+
+        from{
+            transform:translateX(0);
+        }
+
+        to{
+            transform:translateX(calc(-235px * 24));
+        }
+
+    }
+
+}

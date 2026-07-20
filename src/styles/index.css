@@ -1,0 +1,217 @@
+.titulo{
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.titulo_{
+    color: var(--accent-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.subTitulo{
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.subTitulo_card{
+    color: var(--dark-primary-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.subTitulo_{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sub_text{
+    color: var(--text-color);
+    font-family: var(--Inter-Italic);
+}
+
+.padding_top{
+    padding-top: 15%;
+}
+
+.padding_card{
+    padding-top: 5%;
+}
+
+.section_title{
+    color: var(--dark-primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section_underline {
+    width: 10%;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 0 auto;
+}
+
+.section_underline_about {
+    width: 30%;
+    height: 4px;
+    background: var(--dark-primary-color);
+    margin: 0 auto;
+}
+
+.marca_1{
+    color: var(--dark-primary-color);
+    font-weight: bold;
+    font-size: var(--text-2xl);
+}
+.marca_2{
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: var(--text-2xl);
+}
+
+.work_card{
+    /*border: 1px solid var(--accent-color);*/
+    padding: 2%;
+
+    text-align: justify;
+    font-family: var(--Inter-Italic);
+}
+
+.img_card{
+    padding-top: 5%;
+    width: 30%;
+}
+
+.img_{
+    padding-top: 5%;
+    width: 18%;
+}
+
+._img_{
+    width: 30%;
+}
+
+._img_about{
+    width: 100%;
+    border-radius: 50% 10px 50% 10px;
+}
+
+.img_separador{
+    width: 80%;
+    height: 80px;
+    opacity: 20%;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.separador{
+    background-color: var(--dark-primary-color);
+    height: auto;
+}
+
+.sep_vertical{
+    border-right: 1px solid var(--secundary-text-color);
+}
+
+.separador_2{
+    background-color: var(--secundary-secundary-color);
+    min-height: 10rem;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.separador_3{
+    background-color: var(--secundary-secundary-color);
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn-contactanos{
+    background:var(--button-color);
+    color:var(--text-color);
+    font-weight:600;
+    width: 80%;
+    border-radius:10px;
+
+}
+
+.section_border{
+    /*border: 1px solid var(--accent-color);*/
+    padding: 4cap;
+}
+
+.text_about{
+    padding: 2cap;
+}
+
+.text_justify{
+    text-align: justify;
+}
+
+.margin_top{
+    margin-top: 3%;
+}
+
+.color_about{
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/*sobre escribo bootstrap*/
+.btn-primary_{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-secondary_{
+    border: 1px solid var(--divider-color);
+    color: var(--text-color);
+}
+
+.btn-primary_:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-secondary_:hover{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.link_hover:hover{
+    color: var(--accent-color)
+}
+/*----------------------------*/
+
+
+
+
+
+
+@media (max-width: 768px){
+    .padding_top{
+        padding-top: 30%;
+    }
+
+    .img_{
+    padding-top: 5%;
+    width: 15%;
+    }
+
+    ._img_{
+    width: 15%;
+    }
+
+    .separador_2{
+    height: 20rem;
+    }
+
+}

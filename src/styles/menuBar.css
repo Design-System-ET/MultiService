@@ -1,0 +1,106 @@
+.navbar {
+    background: #fff;
+    height: 90px;
+    box-shadow: 0 3px 18px rgba(0,0,0,.08);
+    z-index: 999;
+
+    position: fixed;
+    width:100%; 
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand img{
+    height:55px;
+}
+
+.navbar-nav{
+    gap:20px;
+}
+
+.navbar-nav .nav-link{
+    position:relative;
+    color:#1a3c5e;
+    font-weight:600;
+    font-size:1rem;
+    transition:.25s;
+    padding:.5rem .25rem;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#f47b20;
+}
+
+.navbar-nav .nav-link.active{
+    color:#1a3c5e;
+}
+
+.navbar-nav .nav-link.active::after{
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    left:50%;
+    transform:translateX(-50%);
+    width:35px;
+    height:4px;
+    border-radius:10px;
+    background:#f47b20;
+}
+
+/* Botón */
+
+.btn.btn-presupuesto{
+    background:#1a3c5e;
+    color:#fff;
+    font-weight:600;
+    border-radius:10px;
+    padding:12px 24px;
+    transition:.25s;
+}
+
+.btn.btn-presupuesto:hover{
+    background:#f47b20;
+    color:#fff;
+}
+
+/* Navbar responsive */
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* Menú móvil */
+
+@media(max-width:991px){
+
+    .navbar{
+        height:auto;
+        padding:15px 0;
+    }
+
+    .navbar-collapse{
+        background:#fff;
+        margin-top:15px;
+        border-radius:12px;
+        padding:20px;
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .navbar-nav{
+        gap:10px;
+    }
+
+    .navbar-nav .nav-link.active::after{
+        display:none;
+    }
+
+    .btn-presupuesto{
+        width:100%;
+        margin-top:15px;
+    }
+
+}

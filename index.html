@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plantilla web moderna con Vite, Bootstrap, Font Awesome y SweetAlert2. Ideal para iniciar proyectos responsivos rápidamente.">
+    <meta name="keywords" content="plantilla web, Vite, Bootstrap, Axios, SweetAlert2, Font Awesome, responsive, SPA">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plantilla Web moderna con Vite y Bootstrap">
+    <meta property="og:description" content="Plantilla web lista para comenzar con Vite, Bootstrap, Font Awesome y SweetAlert2.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Plantilla+Web">
+    <meta property="og:url" content="%VITE_SITE_URL%/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="%VITE_SITE_URL%/">
+
+    <title>MultiService</title>
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <!--Cargo el css desde main.ts-->
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    
+    <!-- Manifest / permite instalar un app modo display online directo en el dispositivo movil -->
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="/public/MS_header.png" alt="MultiService">
+                </a>
+
+                <button class="navbar-toggler"
+                        id="menu-toggle"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trabajos">Trabajos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn btn-presupuesto">
+                        Solicitar presupuesto
+                    </a>
+
+                </div>
+
+            </div>
+
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row justify-content-left">
+                <div class="col-10 display-5 fw-bold text-left padding_top">
+                    <p class="titulo">Soluciones técnicas</p>
+                    <p class="titulo">para <span class="titulo_">cada necesidad</span></p>
+                </div>
+
+                <div class="col-10 col-lg-4 text-left text-justify">
+                    <p class="subTitulo">Ofrecemos múltiples servicios técnicos y artesanales con calidad, responsabilidad y compromiso</p>
+            </div>
+
+            <div class="d-grid gap-3 d-md-block">
+                <button id="whatsapp-button" class="btn btn-primary_ btn-lg" type="button"><i class="bi bi-whatsapp fs-5"></i> Contactar ahora</button>
+                
+                <button class="btn btn-secondary_ btn-lg" 
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#submenuServicios"
+                        aria-expanded="false"
+                        aria-controls="submenuServicios">Ver servicios <i class="bi bi-chevron-down"></i></button>
+
+                        <div class="collapse mt-2" id="submenuServicios">
+                            <div class="card card-body">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Electricidad</a>
+                                        <a href="#" class="dropdown-item link_hover">Electrónica</a>
+                                        <a href="#" class="dropdown-item link_hover">Informática</a>
+                                        <a href="#" class="dropdown-item link_hover">Cámaras de seguridad</a>
+                                        <a href="#" class="dropdown-item link_hover">Antenas satelitales</a>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Reparación electrodoméstica</a>
+                                        <a href="#" class="dropdown-item link_hover">Restauración cocinas</a>
+                                        <a href="#" class="dropdown-item link_hover">Restauración lavadora</a>
+                                        <a href="#" class="dropdown-item link_hover">Mecánica de motos</a>
+                                        <a href="#" class="dropdown-item link_hover">Mecánica motosierra</a>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Mecánica bordadora</a>
+                                        <a href="#" class="dropdown-item link_hover">Carpintería / Mueblista</a>
+                                        <a href="#" class="dropdown-item link_hover">Herrería</a>
+                                        <a href="#" class="dropdown-item link_hover">Cajas de audio</a>
+                                        <a href="#" class="dropdown-item link_hover">Consolas games</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <!-- servicios -->
+        <section id="servicios" class="container">
+            
+            <div>
+                <div>
+                    <h1 class="section_title">Servicios Destacados</h1>
+                    <div class="section_underline"></div>
+                </div>
+
+                <div class="row  padding_card gy-4">
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/rayo.jpg" class="card-img-top d-block mx-auto img_card" alt="Electricidad">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Electricidad</p>
+                                <p class="text-center">Instalaciones, mantenimiento y reparaciones eléctricas.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/electronica.jpg" class="card-img-top d-block mx-auto img_card" alt="Electronica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Reparaciones electrónicas</p>
+                                <p class="text-center">Diagnóstico y reparaciones de equipos electrónicos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/proyectos_electronicos.jpg" class="card-img-top d-block mx-auto img_card" alt="Proyectos Electronicos">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Proyectos electrónicos</p>
+                                <p class="text-center">Diseño y desarrollo de proyectos electrónicos a medida.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/reparacion_informatica.jpg" class="card-img-top d-block mx-auto img_card" alt="Reparacion Informatica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Reparación informática</p>
+                                <p class="text-center">Servicio técnico de PC, notebooks, redes y software.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/carpinteria.jpg" class="card-img-top d-block mx-auto img_card" alt="Carpinteria">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Carpintería</p>
+                                <p class="text-center">Muebles a medida, trabajos en madera y melamina.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/mecanica.jpg" class="card-img-top d-block mx-auto img_card" alt="Mecanica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Mecánica</p>
+                                <p class="text-center">Mantenimiento y reparación de motos, motosierras y bordadoras.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/antenas.jpg" class="card-img-top d-block mx-auto img_card" alt="Instalacion de Antenas">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Instalación de antenas</p>
+                                <p class="text-center">Instalación, orientación y configuración de antenas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/public/herreria.jpg" class="card-img-top d-block mx-auto img_card" alt="Herreria">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Herrería</p>
+                                <p class="text-center">Trabajos en metal, estructuras, rejas y fabricaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- separador -->
+        <div class="container-fluid separador">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row gy-2">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="/public/escudo.png" class="card-img-top d-block mx-auto img_" alt="Escudo">
+                            <p class="subTitulo_ text-center">Calidad garantizada</p>
+                            <p class="text-center sub_text">Trabajamos con materiales de calidad y garantía en cada servicio.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="/public/persona.png" class="card-img-top d-block mx-auto img_" alt="Persona">
+                            <p class="subTitulo_ text-center">Atención personalizada</p>
+                            <p class="text-center sub_text">Escuchamos tus necesidades y brindamos la mejor solución a medida.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="/public/reloj.png" class="card-img-top d-block mx-auto img_" alt="Reloj">
+                            <p class="subTitulo_ text-center">Compromiso y puntualidad</p>
+                            <p class="text-center sub_text">Cumplimos con los tiempos acortados y con total responsabilidad.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <img src="/public/mano.png" class="card-img-top d-block mx-auto img_" alt="Mano">
+                            <p class="subTitulo_ text-center">Experiencia y confianza</p>
+                            <p class="text-center sub_text">Años de experiencia nos respaldan y nuestros clientes nos recomiendan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nosotros -->
+        <section id="nosotros" class="container">
+            <div>
+                <div>
+                    <h1 class="section_title">Nosotros</h1>
+                    <div class="section_underline"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 section_border">
+                        <h5 class="subTitulo_card">¿Quiénes Somos?</h5>
+                        <p class="text_justify padding_card">En Multiservice somos una empresa uruguaya comprometida con brindar soluciones integrales y de calidad para hogares, negocios e industrias.</p>
+                        <p class="text_justify">Contamos con un equipo de profesionales altamente capacitados y con amplia experiencia en diversas áreas: electricidad, electrónica, carpintería, mecánica, informática, instalación de antenas y mucho mas.</p>
+                        <p class="text_justify">Nuestro objetivo es ofrecer un servicio confiable, eficiente y personalizado, adaptado a las necesidades de cada cliente, garantizando siempre responsabilidad, seriedad y resultados duraderos.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 section_border">
+                        <img class="_img_about" src="/public/sobre_nosotros.png" alt="Sobre Nosotros">
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <div class="row  padding_card gy-4">
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/public/mision.jpg" class="card-img-top d-block mx-auto img_card" alt="Electricidad">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">MISIÓN</p>
+                                    <p class="text-center text_about">Brindar servicios integrales con altos estándares de calidad, asegurando soluciones eficientes que generen confianza y satisfacción en nuestros clientes.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/public/vision.jpg" class="card-img-top d-block mx-auto img_card" alt="Electronica">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">VISIÓN</p>
+                                    <p class="text-center text_about">Ser la empresa multiservicio líder de la zona, reconocida por nuestra profesionalidad, innovación y compromiso con el crecimiento sostenible de nuestros clientes y comunidad.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/public/valores.jpg" class="card-img-top d-block mx-auto img_card" alt="Proyectos Electronicos">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">VALORES</p>
+                                    <p class="text-center text_about">Compromiso, honestidad, responsabilidad, respeto y trabajo en equipo. Creemos en la transparencia y en construir relaciones duraderas basadas en la confianza.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row separador_3 margin_top g-0">
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/public/experiencia.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">10+</h1>
+                            <p class="text_about p-0">Años de experiencia</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/public/experiencia.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">500+</h1>
+                            <p class="text_about p-0">Proyectos realizados</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/public/experiencia.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">300+</h1>
+                            <p class="text_about p-0">Clientes satisfechos</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/public/experiencia.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">27/7</h1>
+                        <p class="text_about p-0">Disponibilidad de soporte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trabajos/galeria -->
+        <section id="trabajos" class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="section_title">Trabajos Realizados</h1>
+                        <div class="section_underline"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider">
+                            <div class="slide-track">
+
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/1.jpeg" alt="Trabajo 1">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/2.jpeg" alt="Trabajo 2">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/3.jpeg" alt="Trabajo 3">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/4.jpeg" alt="Trabajo 4">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/5.jpeg" alt="Trabajo 5">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/6.jpeg" alt="Trabajo 6">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/7.jpeg" alt="Trabajo 7">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/8.jpeg" alt="Trabajo 8">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/9.jpeg" alt="Trabajo 9">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/10.jpeg" alt="Trabajo 10">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/11.jpeg" alt="Trabajo 11">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/12.jpeg" alt="Trabajo 12">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/13.jpeg" alt="Trabajo 13">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/14.jpeg" alt="Trabajo 14">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/15.jpeg" alt="Trabajo 15">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/16.jpeg" alt="Trabajo 16">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/17.jpeg" alt="Trabajo 17">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/18.jpeg" alt="Trabajo 18">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/19.jpeg" alt="Trabajo 19">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/20.jpeg" alt="Trabajo 20">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/21.jpeg" alt="Trabajo 21">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/22.jpeg" alt="Trabajo 22">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/23.jpeg" alt="Trabajo 23">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/24.jpeg" alt="Trabajo 24">
+                                </div>
+
+                                <!-- Duplicado para scroll infinito -->
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/1.jpeg" alt="Trabajo 1">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/2.jpeg" alt="Trabajo 2">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/3.jpeg" alt="Trabajo 3">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/4.jpeg" alt="Trabajo 4">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/5.jpeg" alt="Trabajo 5">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/6.jpeg" alt="Trabajo 6">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/7.jpeg" alt="Trabajo 7">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/8.jpeg" alt="Trabajo 8">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/9.jpeg" alt="Trabajo 9">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/10.jpeg" alt="Trabajo 10">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/11.jpeg" alt="Trabajo 11">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/12.jpeg" alt="Trabajo 12">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/13.jpeg" alt="Trabajo 13">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/14.jpeg" alt="Trabajo 14">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/15.jpeg" alt="Trabajo 15">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/16.jpeg" alt="Trabajo 16">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/17.jpeg" alt="Trabajo 17">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/18.jpeg" alt="Trabajo 18">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/19.jpeg" alt="Trabajo 19">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/20.jpeg" alt="Trabajo 20">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/21.jpeg" alt="Trabajo 21">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/22.jpeg" alt="Trabajo 22">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/23.jpeg" alt="Trabajo 23">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/src/assets/trabajos/24.jpeg" alt="Trabajo 24">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <p class="work_card">En <span class="marca_1">Multi</span><span class="marca_2">Service</span>, cada trabajo que realizamos es el resultado de un proceso pensado para brindarte tranquilidad y resultados duraderos. Sabemos que cuando necesitás un servicio, ya sea una reparación, una instalación o un proyecto desde cero, lo que buscás es confianza, claridad y profesionalismo. Por eso, a lo largo de los años hemos desarrollado una metodología de trabajo que nos permite abordar cada pedido con seriedad, sin importar su tamaño o complejidad. Desde el primer contacto hasta la entrega final, nos guiamos por tres pilares fundamentales que definen nuestra forma de trabajar y que compartimos con vos a continuación.</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <img src="/public/separador.png" class="img_separador" alt="separador, PBC">
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 1</p>
+                        <p>En MultiService, creemos que un trabajo bien hecho comienza con un diagnóstico preciso. Por eso arrancamos con una evaluación personalizada sin cargo, ya sea en el lugar o en nuestro taller. Analizamos en detalle lo que se necesita —una instalación eléctrica, una reparación de PC, un mueble a medida o un arreglo de herrería— para entender el alcance real del trabajo. Escuchamos tus inquietudes, revisamos cada aspecto técnico y te asesoramos sobre las mejores soluciones. Todo explicado claro, sin vueltas y sin compromiso.</p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 2</p>
+                        <p>Con la evaluación en mano, elaboramos un presupuesto detallado y por escrito que refleja cada aspecto del trabajo. No es una simple cifra: desglosamos materiales, mano de obra, tiempos estimados y condiciones de pago, para que no haya sorpresas ni cargos ocultos. Nuestro compromiso es entregártelo en un plazo máximo de 24 horas hábiles. Si tenés dudas, lo revisamos juntos. Solo cuando estés conforme, damos el paso siguiente. Claridad total desde el vamos.</p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 3</p>
+                        <p>Llegó el momento de poner manos a la obra. Coordinamos la logística según el trabajo: nos trasladamos al lugar indicado o recibimos el equipo en nuestro taller. En ambos casos, te mantenemos al tanto de cada paso. Trabajamos con prolijidad, responsabilidad y respetando los tiempos acordados. Una vez finalizado, hacemos una revisión conjunta para asegurarnos de que el resultado sea el esperado. Y no nos vamos del todo: ofrecemos seguimiento posterior para garantizar que todo se mantenga en óptimas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- separador -->
+        <div class="fluid-container separador_2 d-flex align-items-center">
+            <div class="row justify-content-center w-100">
+                <div class="col-8">
+                    <div class="row gy-2">
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="/public/mensaje.png" class="_img_" alt="Mensaje">
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="section_title mb-1">¿Tienes un proyecto en mente?</p>
+                            <p class="mb-0">Contáctanos y recibí tu presupuesto sin compromiso.</p>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                            <button id="whatsapp-button_2" class="btn btn-contactanos text-center"><i class="bi bi-whatsapp"></i> Contáctanos</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="container-fluid">
+        <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap gap-4">
+
+            <div class="conte">
+                <p class="txt_footer">Contacto</p>
+                
+                <div class="d-flex gap-3">
+                    <a href="https://wa.link/7cmi75" target="_blank"><i class="bi bi-whatsapp fs-4"></i></a>
+                    <a href="mailto:darkman_anubis_iara@hotmail.com"><i class="bi bi-envelope fs-4"></i></a>
+                </div>
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Social</p>
+
+                <div class="d-flex gap-3">
+                    <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+            </div>
+
+            <div class="conte">
+                <!--
+                <p class="txt_footer">Design by</p>
+                -->
+                <div class="ico_content">
+                    <img src="/src/assets/logo_50x50.png" alt="" class="img_logo">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center" >
+            <p class="footer_aling">© 2026 MultiService by <a href="">Design System</a> - Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+
+
+    <!-- JS externo -->
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
