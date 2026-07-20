@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"['dist/index.html','dist/pages/contacto.html'].forEach(f=>require('fs').writeFileSync(f,require('fs').readFileSync(f,'utf8').replace('<link rel=\\\"stylesheet\\\" crossorigin','<link rel=\\\"stylesheet\\\"')))\"",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node -e \"require('fs').writeFileSync('dist/.nojekyll','')\" && gh-pages -d dist",
     "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true})\"",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",

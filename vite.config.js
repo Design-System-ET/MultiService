@@ -15,9 +15,11 @@ export default defineConfig(({ mode }) => {
       }
     },
     transformIndexHtml: {
-      enforce: "pre",
+      enforce: "post",
       transform(html) {
-        return html.replace(/%VITE_SITE_URL%/g, env.VITE_SITE_URL);
+        return html
+          .replace(/%VITE_SITE_URL%/g, env.VITE_SITE_URL)
+          .replace('<link rel="stylesheet" crossorigin', '<link rel="stylesheet"');
       }
     }
   };
