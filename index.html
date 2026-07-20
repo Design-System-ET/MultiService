@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plantilla web moderna con Vite, Bootstrap, Font Awesome y SweetAlert2. Ideal para iniciar proyectos responsivos rápidamente.">
+    <meta name="keywords" content="plantilla web, Vite, Bootstrap, Axios, SweetAlert2, Font Awesome, responsive, SPA">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plantilla Web moderna con Vite y Bootstrap">
+    <meta property="og:description" content="Plantilla web lista para comenzar con Vite, Bootstrap, Font Awesome y SweetAlert2.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Plantilla+Web">
+    <meta property="og:url" content="AQUI-URL-DO-SITE/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="AQUI-URL-DO-SITE/">
+
+    <title>MultiService</title>
+
+    <!-- Mi CSS -->
+    <!--Cargo el css desde main.ts-->
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96-2KQelfMZ.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DLrdkp6Z.svg" />
+    <link rel="shortcut icon" href="/assets/favicon-DGJ0I8f_.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-BwkAZoGK.png" />
+    
+    <!-- Manifest / permite instalar un app modo display online directo en el dispositivo movil -->
+    <link rel="manifest" href="/assets/site-CAlyEvoK.webmanifest" />
+  <script type="module" crossorigin src="/assets/main-D6Hibwrn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BtmkKVyw.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/MS_header-DWBCp_pJ.png" alt="MultiService">
+                </a>
+
+                <button class="navbar-toggler"
+                        id="menu-toggle"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trabajos">Trabajos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                    <a href="#" class="btn btn-presupuesto">
+                        Solicitar presupuesto
+                    </a>
+
+                </div>
+
+            </div>
+
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row justify-content-left">
+                <div class="col-10 display-5 fw-bold text-left padding_top">
+                    <p class="titulo">Soluciones técnicas</p>
+                    <p class="titulo">para <span class="titulo_">cada necesidad</span></p>
+                </div>
+
+                <div class="col-10 col-lg-4 text-left text-justify">
+                    <p class="subTitulo">Ofrecemos múltiples servicios técnicos y artesanales con calidad, responsabilidad y compromiso</p>
+            </div>
+
+            <div class="d-grid gap-3 d-md-block">
+                <button id="whatsapp-button" class="btn btn-primary_ btn-lg" type="button"><i class="bi bi-whatsapp fs-5"></i> Contactar ahora</button>
+                
+                <button class="btn btn-secondary_ btn-lg" 
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#submenuServicios"
+                        aria-expanded="false"
+                        aria-controls="submenuServicios">Ver servicios <i class="bi bi-chevron-down"></i></button>
+
+                        <div class="collapse mt-2" id="submenuServicios">
+                            <div class="card card-body">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Electricidad</a>
+                                        <a href="#" class="dropdown-item link_hover">Electrónica</a>
+                                        <a href="#" class="dropdown-item link_hover">Informática</a>
+                                        <a href="#" class="dropdown-item link_hover">Cámaras de seguridad</a>
+                                        <a href="#" class="dropdown-item link_hover">Antenas satelitales</a>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Reparación electrodoméstica</a>
+                                        <a href="#" class="dropdown-item link_hover">Restauración cocinas</a>
+                                        <a href="#" class="dropdown-item link_hover">Restauración lavadora</a>
+                                        <a href="#" class="dropdown-item link_hover">Mecánica de motos</a>
+                                        <a href="#" class="dropdown-item link_hover">Mecánica motosierra</a>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <a href="#" class="dropdown-item link_hover">Mecánica bordadora</a>
+                                        <a href="#" class="dropdown-item link_hover">Carpintería / Mueblista</a>
+                                        <a href="#" class="dropdown-item link_hover">Herrería</a>
+                                        <a href="#" class="dropdown-item link_hover">Cajas de audio</a>
+                                        <a href="#" class="dropdown-item link_hover">Consolas games</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <!-- servicios -->
+        <section id="servicios" class="container">
+            
+            <div>
+                <div>
+                    <h1 class="section_title">Servicios Destacados</h1>
+                    <div class="section_underline"></div>
+                </div>
+
+                <div class="row  padding_card gy-4">
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/rayo-GmFoxRsh.jpg" class="card-img-top d-block mx-auto img_card" alt="Electricidad">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Electricidad</p>
+                                <p class="text-center">Instalaciones, mantenimiento y reparaciones eléctricas.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/electronica-Cr6k6RZW.jpg" class="card-img-top d-block mx-auto img_card" alt="Electronica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Reparaciones electrónicas</p>
+                                <p class="text-center">Diagnóstico y reparaciones de equipos electrónicos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/proyectos_electronicos-EJACc06x.jpg" class="card-img-top d-block mx-auto img_card" alt="Proyectos Electronicos">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Proyectos electrónicos</p>
+                                <p class="text-center">Diseño y desarrollo de proyectos electrónicos a medida.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/reparacion_informatica-DgD9l30G.jpg" class="card-img-top d-block mx-auto img_card" alt="Reparacion Informatica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Reparación informática</p>
+                                <p class="text-center">Servicio técnico de PC, notebooks, redes y software.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/carpinteria-D6uw3U6k.jpg" class="card-img-top d-block mx-auto img_card" alt="Carpinteria">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Carpintería</p>
+                                <p class="text-center">Muebles a medida, trabajos en madera y melamina.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/mecanica-EgqB528e.jpg" class="card-img-top d-block mx-auto img_card" alt="Mecanica">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Mecánica</p>
+                                <p class="text-center">Mantenimiento y reparación de motos, motosierras y bordadoras.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/antenas-Cb9QjpQB.jpg" class="card-img-top d-block mx-auto img_card" alt="Instalacion de Antenas">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Instalación de antenas</p>
+                                <p class="text-center">Instalación, orientación y configuración de antenas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img src="/assets/herreria-Dz6bYB2-.jpg" class="card-img-top d-block mx-auto img_card" alt="Herreria">
+                            <div class="card-body">
+                                <p class="card-text text-center subTitulo_card">Herrería</p>
+                                <p class="text-center">Trabajos en metal, estructuras, rejas y fabricaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- separador -->
+        <div class="container-fluid separador">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="row gy-2">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="data:image/png;base64,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" class="card-img-top d-block mx-auto img_" alt="Escudo">
+                            <p class="subTitulo_ text-center">Calidad garantizada</p>
+                            <p class="text-center sub_text">Trabajamos con materiales de calidad y garantía en cada servicio.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="data:image/png;base64,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" class="card-img-top d-block mx-auto img_" alt="Persona">
+                            <p class="subTitulo_ text-center">Atención personalizada</p>
+                            <p class="text-center sub_text">Escuchamos tus necesidades y brindamos la mejor solución a medida.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
+                            <img src="data:image/png;base64,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" class="card-img-top d-block mx-auto img_" alt="Reloj">
+                            <p class="subTitulo_ text-center">Compromiso y puntualidad</p>
+                            <p class="text-center sub_text">Cumplimos con los tiempos acortados y con total responsabilidad.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                            <img src="data:image/png;base64,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" class="card-img-top d-block mx-auto img_" alt="Mano">
+                            <p class="subTitulo_ text-center">Experiencia y confianza</p>
+                            <p class="text-center sub_text">Años de experiencia nos respaldan y nuestros clientes nos recomiendan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nosotros -->
+        <section id="nosotros" class="container">
+            <div>
+                <div>
+                    <h1 class="section_title">Nosotros</h1>
+                    <div class="section_underline"></div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 section_border">
+                        <h5 class="subTitulo_card">¿Quiénes Somos?</h5>
+                        <p class="text_justify padding_card">En Multiservice somos una empresa uruguaya comprometida con brindar soluciones integrales y de calidad para hogares, negocios e industrias.</p>
+                        <p class="text_justify">Contamos con un equipo de profesionales altamente capacitados y con amplia experiencia en diversas áreas: electricidad, electrónica, carpintería, mecánica, informática, instalación de antenas y mucho mas.</p>
+                        <p class="text_justify">Nuestro objetivo es ofrecer un servicio confiable, eficiente y personalizado, adaptado a las necesidades de cada cliente, garantizando siempre responsabilidad, seriedad y resultados duraderos.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 section_border">
+                        <img class="_img_about" src="/assets/sobre_nosotros-QmdCXiWl.png" alt="Sobre Nosotros">
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <div class="row  padding_card gy-4">
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/assets/mision-BHIDv9BP.jpg" class="card-img-top d-block mx-auto img_card" alt="Electricidad">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">MISIÓN</p>
+                                    <p class="text-center text_about">Brindar servicios integrales con altos estándares de calidad, asegurando soluciones eficientes que generen confianza y satisfacción en nuestros clientes.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/assets/vision-BjmzZEcM.jpg" class="card-img-top d-block mx-auto img_card" alt="Electronica">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">VISIÓN</p>
+                                    <p class="text-center text_about">Ser la empresa multiservicio líder de la zona, reconocida por nuestra profesionalidad, innovación y compromiso con el crecimiento sostenible de nuestros clientes y comunidad.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card">
+                                <img src="/assets/valores-By_wfNIE.jpg" class="card-img-top d-block mx-auto img_card" alt="Proyectos Electronicos">
+                                <div class="card-body">
+                                    <p class="card-text text-center subTitulo_card">VALORES</p>
+                                    <p class="text-center text_about">Compromiso, honestidad, responsabilidad, respeto y trabajo en equipo. Creemos en la transparencia y en construir relaciones duraderas basadas en la confianza.</p>
+                                    <div class="section_underline_about"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row separador_3 margin_top g-0">
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/assets/experiencia-B_ITUj-V.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">10+</h1>
+                            <p class="text_about p-0">Años de experiencia</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/assets/experiencia-B_ITUj-V.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">500+</h1>
+                            <p class="text_about p-0">Proyectos realizados</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/assets/experiencia-B_ITUj-V.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">300+</h1>
+                            <p class="text_about p-0">Clientes satisfechos</p>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="row col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img src="/assets/experiencia-B_ITUj-V.png" alt="Experiencia">
+                        </div>
+                        <div class="col-8">
+                            <h1 class="subTitulo color_about mb-0">27/7</h1>
+                        <p class="text_about p-0">Disponibilidad de soporte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trabajos/galeria -->
+        <section id="trabajos" class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h1 class="section_title">Trabajos Realizados</h1>
+                        <div class="section_underline"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider">
+                            <div class="slide-track">
+
+                                <div class="slide-item">
+                                    <img src="/assets/1-ByjTw7d5.jpeg" alt="Trabajo 1">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/2-C51EApKe.jpeg" alt="Trabajo 2">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/3-Dk633xRb.jpeg" alt="Trabajo 3">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/4-DHGWa1lt.jpeg" alt="Trabajo 4">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/5-DKKfg3ku.jpeg" alt="Trabajo 5">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/6-vCzuktxA.jpeg" alt="Trabajo 6">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/7-DG5puzw4.jpeg" alt="Trabajo 7">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/8-CGalzgC2.jpeg" alt="Trabajo 8">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/9-CKKwa16p.jpeg" alt="Trabajo 9">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/10-BYYkTHcY.jpeg" alt="Trabajo 10">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/11-jZDuly4J.jpeg" alt="Trabajo 11">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/12-BjdB1vE6.jpeg" alt="Trabajo 12">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/13-B0Jo7QES.jpeg" alt="Trabajo 13">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/14-DH_UN4ln.jpeg" alt="Trabajo 14">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/15-COcGIZTj.jpeg" alt="Trabajo 15">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/16-BzcNbAk1.jpeg" alt="Trabajo 16">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/17-CJ7yXuGJ.jpeg" alt="Trabajo 17">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/18-CUIlqYiW.jpeg" alt="Trabajo 18">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/19-BwGTRoCk.jpeg" alt="Trabajo 19">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/20-DbV8hrQ3.jpeg" alt="Trabajo 20">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/21-CoRV_jdq.jpeg" alt="Trabajo 21">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/22-CfuGX862.jpeg" alt="Trabajo 22">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/23-qXNMuDli.jpeg" alt="Trabajo 23">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/24-CoY1lhQB.jpeg" alt="Trabajo 24">
+                                </div>
+
+                                <!-- Duplicado para scroll infinito -->
+                                <div class="slide-item">
+                                    <img src="/assets/1-ByjTw7d5.jpeg" alt="Trabajo 1">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/2-C51EApKe.jpeg" alt="Trabajo 2">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/3-Dk633xRb.jpeg" alt="Trabajo 3">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/4-DHGWa1lt.jpeg" alt="Trabajo 4">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/5-DKKfg3ku.jpeg" alt="Trabajo 5">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/6-vCzuktxA.jpeg" alt="Trabajo 6">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/7-DG5puzw4.jpeg" alt="Trabajo 7">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/8-CGalzgC2.jpeg" alt="Trabajo 8">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/9-CKKwa16p.jpeg" alt="Trabajo 9">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/10-BYYkTHcY.jpeg" alt="Trabajo 10">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/11-jZDuly4J.jpeg" alt="Trabajo 11">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/12-BjdB1vE6.jpeg" alt="Trabajo 12">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/13-B0Jo7QES.jpeg" alt="Trabajo 13">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/14-DH_UN4ln.jpeg" alt="Trabajo 14">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/15-COcGIZTj.jpeg" alt="Trabajo 15">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/16-BzcNbAk1.jpeg" alt="Trabajo 16">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/17-CJ7yXuGJ.jpeg" alt="Trabajo 17">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/18-CUIlqYiW.jpeg" alt="Trabajo 18">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/19-BwGTRoCk.jpeg" alt="Trabajo 19">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/20-DbV8hrQ3.jpeg" alt="Trabajo 20">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/21-CoRV_jdq.jpeg" alt="Trabajo 21">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/22-CfuGX862.jpeg" alt="Trabajo 22">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/23-qXNMuDli.jpeg" alt="Trabajo 23">
+                                </div>
+                                <div class="slide-item">
+                                    <img src="/assets/24-CoY1lhQB.jpeg" alt="Trabajo 24">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <p class="work_card">En <span class="marca_1">Multi</span><span class="marca_2">Service</span>, cada trabajo que realizamos es el resultado de un proceso pensado para brindarte tranquilidad y resultados duraderos. Sabemos que cuando necesitás un servicio, ya sea una reparación, una instalación o un proyecto desde cero, lo que buscás es confianza, claridad y profesionalismo. Por eso, a lo largo de los años hemos desarrollado una metodología de trabajo que nos permite abordar cada pedido con seriedad, sin importar su tamaño o complejidad. Desde el primer contacto hasta la entrega final, nos guiamos por tres pilares fundamentales que definen nuestra forma de trabajar y que compartimos con vos a continuación.</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <img src="/assets/separador-KRXFbI35.png" class="img_separador" alt="separador, PBC">
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 1</p>
+                        <p>En MultiService, creemos que un trabajo bien hecho comienza con un diagnóstico preciso. Por eso arrancamos con una evaluación personalizada sin cargo, ya sea en el lugar o en nuestro taller. Analizamos en detalle lo que se necesita —una instalación eléctrica, una reparación de PC, un mueble a medida o un arreglo de herrería— para entender el alcance real del trabajo. Escuchamos tus inquietudes, revisamos cada aspecto técnico y te asesoramos sobre las mejores soluciones. Todo explicado claro, sin vueltas y sin compromiso.</p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 2</p>
+                        <p>Con la evaluación en mano, elaboramos un presupuesto detallado y por escrito que refleja cada aspecto del trabajo. No es una simple cifra: desglosamos materiales, mano de obra, tiempos estimados y condiciones de pago, para que no haya sorpresas ni cargos ocultos. Nuestro compromiso es entregártelo en un plazo máximo de 24 horas hábiles. Si tenés dudas, lo revisamos juntos. Solo cuando estés conforme, damos el paso siguiente. Claridad total desde el vamos.</p>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 work_card">
+                        <p class="subTitulo_card">PASO 3</p>
+                        <p>Llegó el momento de poner manos a la obra. Coordinamos la logística según el trabajo: nos trasladamos al lugar indicado o recibimos el equipo en nuestro taller. En ambos casos, te mantenemos al tanto de cada paso. Trabajamos con prolijidad, responsabilidad y respetando los tiempos acordados. Una vez finalizado, hacemos una revisión conjunta para asegurarnos de que el resultado sea el esperado. Y no nos vamos del todo: ofrecemos seguimiento posterior para garantizar que todo se mantenga en óptimas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- separador -->
+        <div class="fluid-container separador_2 d-flex align-items-center">
+            <div class="row justify-content-center w-100">
+                <div class="col-8">
+                    <div class="row gy-2">
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="data:image/png;base64,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" class="_img_" alt="Mensaje">
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="section_title mb-1">¿Tienes un proyecto en mente?</p>
+                            <p class="mb-0">Contáctanos y recibí tu presupuesto sin compromiso.</p>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                            <button id="whatsapp-button_2" class="btn btn-contactanos text-center"><i class="bi bi-whatsapp"></i> Contáctanos</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="container-fluid">
+        <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap gap-4">
+
+            <div class="conte">
+                <p class="txt_footer">Contacto</p>
+                
+                <div class="d-flex gap-3">
+                    <a href="https://wa.link/7cmi75" target="_blank"><i class="bi bi-whatsapp fs-4"></i></a>
+                    <a href="mailto:darkman_anubis_iara@hotmail.com"><i class="bi bi-envelope fs-4"></i></a>
+                </div>
+
+            </div>
+
+            <div class="conte">
+                <p class="txt_footer">Social</p>
+
+                <div class="d-flex gap-3">
+                    <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+            </div>
+
+            <div class="conte">
+                <!--
+                <p class="txt_footer">Design by</p>
+                -->
+                <div class="ico_content">
+                    <img src="/assets/logo_50x50-C3c1e8R6.png" alt="" class="img_logo">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center" >
+            <p class="footer_aling">© 2026 MultiService by <a href="">Design System</a> - Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+
+
+    <!-- JS externo -->
+</body>
+
+</html>
