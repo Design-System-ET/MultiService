@@ -58,4 +58,10 @@
     --Inter: 'Inter', sans-serif;
     --Inter-Italic: 'Inter-Italic', sans-serif;
 
+
+    /* IMAGE */
+    --Back_about: url("/src/assets/electro.jpg");
+    --Back_about_2: url("/src/assets/electro_2.jpg");
+    --Back_about_3: url("/src/assets/circuit_bg_4k.png");
+
 }

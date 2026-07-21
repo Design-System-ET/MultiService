@@ -1,0 +1,27 @@
+.swal2-popup .swal-text-custom p {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
+}
+.swal2-popup .swal-text-custom p:last-child {
+    color: #1a3c5e;
+    font-weight: 500;
+}
+.swal2-popup .swal2-image {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.swal2-popup.ResponsivePopup {
+    width: 75%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .swal2-popup.ResponsivePopup {
+        width: 100%;
+    }
+}

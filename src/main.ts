@@ -53,3 +53,36 @@ if (whatsappButton_2) {
         window.open(url, '_blank');
     });
 }
+
+
+//clic servicios
+const electricidad = document.getElementById('Electricidad');
+if (electricidad) {
+    electricidad.addEventListener('click', () => {
+        Swal.fire({
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: "/src/assets/electricidad.png",
+            imageAlt: "Electricidad",
+            showConfirmButton: false
+        });
+    });
+}
+
+const electronica = document.getElementById('Electronica');
+if (electronica) {
+    electronica.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: "/src/assets/electronica.png",
+            imageAlt: "Electronica",
+            showConfirmButton: false
+        });
+    });
+}

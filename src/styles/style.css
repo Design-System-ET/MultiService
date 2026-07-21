@@ -3,6 +3,7 @@
 @import "./tags.css";
 @import "./footer.css";
 @import "./trabajos.css";
+@import "./sweetalert.css";
 
 /* Agrega los css de cada pagina */
 @import "./index.css";
