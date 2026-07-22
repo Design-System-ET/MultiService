@@ -95,6 +95,47 @@ textarea {
     min-height: 30vh;
 }
 
+.section_contacto{
+    min-height: 100vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    padding-top: 7%;
+    margin-bottom: 20px;
+    width: 100%;
+
+    /*se elimina posterio finalizado el diseno*/
+    /*border: 1px solid var(--divider-color);*/
+}
+
+.border-contact
+{
+    --bs-border-opacity: 1;
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.border-contact:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15),
+                0 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+.btn_contact
+{
+    border-color: var(--accent-color) !important;
+}
+
+.btn_contact:hover
+{
+    background-color: var(--accent-color) !important;
+    color: var(--text-color);
+}
+
 @media (width <= 768px) {
     .header_contacto{
         height: 100px;

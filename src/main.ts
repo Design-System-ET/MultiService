@@ -6,7 +6,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import axios from "axios";
 import { Persona } from "./entities/Persona";
+
+//import de los otros scripts
 import "./scripts/contacto";
+
+//import de images------------------------------
+import { electricidadImg, electronicaImg, proy_electronicaImg, informaticaImg } from "./scripts/images";
+
+//----------------------------------------------
 
 import Swal from "sweetalert2";
 
@@ -64,7 +71,7 @@ if (electricidad) {
                 popup: "ResponsivePopup",
                 htmlContainer: "swal-text-custom"  
             },
-            imageUrl: "/src/assets/electricidad.png",
+            imageUrl: electricidadImg,
             imageAlt: "Electricidad",
             showConfirmButton: false
         });
@@ -80,8 +87,40 @@ if (electronica) {
                 popup: "ResponsivePopup",
                 htmlContainer: "swal-text-custom"  
             },
-            imageUrl: "/src/assets/electronica.png",
+            imageUrl: electronicaImg,
             imageAlt: "Electronica",
+            showConfirmButton: false
+        });
+    });
+}
+
+const proy_electronica = document.getElementById('Proy_electronica');
+if (proy_electronica) {
+    proy_electronica.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: proy_electronicaImg,
+            imageAlt: "Proyectos de Electronica",
+            showConfirmButton: false
+        });
+    });
+}
+
+const informatica = document.getElementById('Informatica');
+if (informatica) {
+    informatica.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: informaticaImg,
+            imageAlt: "Proyectos de Electronica",
             showConfirmButton: false
         });
     });
