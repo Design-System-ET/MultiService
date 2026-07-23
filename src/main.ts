@@ -11,7 +11,7 @@ import { Persona } from "./entities/Persona";
 import "./scripts/contacto";
 
 //import de images------------------------------
-import { electricidadImg, electronicaImg, proy_electronicaImg, informaticaImg } from "./scripts/images";
+import { electricidadImg, electronicaImg, proy_electronicaImg, informaticaImg, carpinteriaImg, mecanicaImg, antenasImg, herreriaImg } from "./scripts/images";
 
 //----------------------------------------------
 
@@ -120,7 +120,71 @@ if (informatica) {
                 htmlContainer: "swal-text-custom"  
             },
             imageUrl: informaticaImg,
-            imageAlt: "Proyectos de Electronica",
+            imageAlt: "Informatica",
+            showConfirmButton: false
+        });
+    });
+}
+
+const carpinteria = document.getElementById('Carpinteria');
+if (carpinteria) {
+    carpinteria.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: carpinteriaImg,
+            imageAlt: "Carpinteria",
+            showConfirmButton: false
+        });
+    });
+}
+
+const mecanica = document.getElementById('Mecanica');
+if (mecanica) {
+    mecanica.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: mecanicaImg,
+            imageAlt: "Mecanica",
+            showConfirmButton: false
+        });
+    });
+}
+
+const antenas = document.getElementById('Antenas');
+if (antenas) {
+    antenas.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: antenasImg,
+            imageAlt: "Antenas",
+            showConfirmButton: false
+        });
+    });
+}
+
+const herreria = document.getElementById('Herreria');
+if (herreria) {
+    herreria.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: herreriaImg,
+            imageAlt: "Herreria",
             showConfirmButton: false
         });
     });
