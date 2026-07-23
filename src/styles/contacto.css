@@ -141,6 +141,10 @@ textarea {
         height: 100px;
     } 
 
+    .section_contacto{
+        margin-top: 15%;
+    }
+
     .form{
         width: 90%;
         height: auto;
