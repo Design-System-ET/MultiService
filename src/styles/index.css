@@ -186,6 +186,13 @@
     z-index: -1;
 }
 
+.a{
+    font-size: 13px;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /*sobre escribo bootstrap*/
 .btn-primary_{
@@ -210,6 +217,10 @@
 
 .link_hover:hover{
     color: var(--accent-color)
+}
+
+.card-body {
+    padding: 0px; 
 }
 /*----------------------------*/
 
