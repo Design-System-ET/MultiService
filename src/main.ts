@@ -11,7 +11,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./scripts/contacto";
 
 //import de images------------------------------
-import { electricidadImg, electronicaImg, proy_electronicaImg, informaticaImg, carpinteriaImg, mecanicaImg, antenasImg, herreriaImg } from "./scripts/images";
+import { 
+    electricidadImg, 
+    electronicaImg, 
+    proy_electronicaImg, 
+    informaticaImg, 
+    carpinteriaImg, 
+    mecanicaImg, 
+    antenasImg, 
+    herreriaImg,
+    camarasImg, 
+    restauracionesImg, 
+    lavadorasImge, 
+    vehiculosImg} from "./scripts/images";
 
 //----------------------------------------------
 
@@ -185,6 +197,70 @@ if (herreria) {
             },
             imageUrl: herreriaImg,
             imageAlt: "Herreria",
+            showConfirmButton: false
+        });
+    });
+}
+
+const camaras = document.getElementById('Camaras');
+if (camaras) {
+    camaras.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: camarasImg,
+            imageAlt: "Camaras",
+            showConfirmButton: false
+        });
+    });
+}
+
+const restauraciones = document.getElementById('Restauraciones');
+if (restauraciones) {
+    restauraciones.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: restauracionesImg,
+            imageAlt: "Restauraciones",
+            showConfirmButton: false
+        });
+    });
+}
+
+const lavadoras = document.getElementById('Lavadoras');
+if (lavadoras) {
+    lavadoras.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: lavadorasImge,
+            imageAlt: "Lavadoras",
+            showConfirmButton: false
+        });
+    });
+}
+
+const vehiculos = document.getElementById('Vehiculos');
+if (vehiculos) {
+    vehiculos.addEventListener('click', () => {
+        Swal.fire({
+            
+            customClass: {
+                popup: "ResponsivePopup",
+                htmlContainer: "swal-text-custom"  
+            },
+            imageUrl: vehiculosImg,
+            imageAlt: "Vehiculos",
             showConfirmButton: false
         });
     });
