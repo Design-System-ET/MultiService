@@ -150,3 +150,9 @@ textarea {
         height: auto;
     } 
 }
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .padding_section{
+        padding-top: 12%;
+    }
+}

@@ -123,6 +123,7 @@
 
 .sep_vertical{
     border-right: 1px solid var(--secundary-text-color);
+    border-left: 1px solid var(--secundary-text-color);
 }
 
 .separador_2{
@@ -228,9 +229,13 @@
 
 
 
-
+/* Celulares */
 @media (max-width: 768px){
     .padding_top{
+        padding-top: 30%;
+    }
+
+    .padding_section{
         padding-top: 30%;
     }
 
@@ -247,4 +252,28 @@
     height: 20rem;
     }
 
+}
+
+/* Tablet 7"–10" */
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .padding_section{
+        padding-top: 12%;
+    }
+
+    .img_{
+    padding-top: 5%;
+    width: 15%;
+    }
+
+    ._img_{
+    width: 30%;
+    }
+
+    .separador_2{
+    height: 20rem;
+    }
+
+    .titulo{
+        font-size: 3.5rem;
+    }
 }

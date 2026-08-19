@@ -182,7 +182,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#footer">Contacto</a>
+                            <a class="nav-link" href="#Contacto">Contacto</a>
                         </li>
 
                     </ul>
@@ -200,6 +200,7 @@
     <!-- header -->
     <header>
         <div class="container">
+            <!-- Titulo --> 
             <div class="row justify-content-left">
                 <div class="col-10 display-5 fw-bold text-left padding_top">
                     <p class="titulo">Soluciones técnicas</p>
@@ -208,8 +209,9 @@
 
                 <div class="col-10 col-lg-4 text-left text-justify">
                     <p class="subTitulo">Ofrecemos múltiples servicios técnicos y artesanales con calidad, responsabilidad y compromiso</p>
-            </div>
+                </div>
 
+            <!-- Botones -->    
             <div class="d-grid gap-3 d-md-block">
                 <button id="whatsapp-button" class="btn btn-primary_ btn-lg" type="button"><i class="bi bi-whatsapp fs-5"></i> Contactar ahora</button>
                 
@@ -218,52 +220,54 @@
                         data-bs-toggle="collapse"
                         data-bs-target="#submenuServicios"
                         aria-expanded="false"
-                        aria-controls="submenuServicios">Ver servicios <i class="bi bi-chevron-down"></i></button>
+                        aria-controls="submenuServicios">Ver servicios <i class="bi bi-chevron-down"></i>
+                </button>
 
-                        <div class="collapse mt-2" id="submenuServicios">
-                            <div class="card card-body">
-                                <div class="row">
+                <!-- Opciones Menu --> 
+                <div class="collapse mt-2" id="submenuServicios">
+                    <div class="card card-body">
+                        <div class="row">
 
-                                    <div class="col-md-3">
-                                        <a href="#" class="dropdown-item link_hover">Electricidad</a>
-                                        <a href="#" class="dropdown-item link_hover">Electrónica</a>
-                                        <a href="#" class="dropdown-item link_hover">Informática</a>
-                                        <a href="#" class="dropdown-item link_hover">Alarmas y Cámaras</a>
-                                        <a href="#" class="dropdown-item link_hover">Antenas satelitales</a>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <a href="#" class="dropdown-item link_hover">Reparación electrodoméstica</a>
-                                        <a href="#" class="dropdown-item link_hover">Restauración cocinas</a>
-                                        <a href="#" class="dropdown-item link_hover">Restauración lavadora</a>
-                                        <a href="#" class="dropdown-item link_hover">Mecánica de motos</a>
-                                        <a href="#" class="dropdown-item link_hover">Mecánica motosierra</a>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <a href="#" class="dropdown-item link_hover">Mecánica bordadora</a>
-                                        <a href="#" class="dropdown-item link_hover">Carpintería / Mueblista / Industrial</a>
-                                        <a href="#" class="dropdown-item link_hover">Herrería</a>
-                                        <a href="#" class="dropdown-item link_hover">Cajas de audio</a>
-                                        <a href="#" class="dropdown-item link_hover">Consolas games</a>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <a href="#" class="dropdown-item link_hover">Proyectos de electrónica</a>
-                                        <a href="#" class="dropdown-item link_hover">Proyectos de iluminación</a>
-                                        <a href="#" class="dropdown-item link_hover">Vehículos eléctricos</a>
-                                    </div>
-
-                                </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="#" class="dropdown-item link_hover">Electricidad</a>
+                                <a href="#" class="dropdown-item link_hover">Electrónica</a>
+                                <a href="#" class="dropdown-item link_hover">Informática</a>
+                                <a href="#" class="dropdown-item link_hover">Alarmas y Cámaras</a>
+                                <a href="#" class="dropdown-item link_hover">Antenas satelitales</a>
                             </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="#" class="dropdown-item link_hover">Reparación electrodoméstica</a>
+                                <a href="#" class="dropdown-item link_hover">Restauración cocinas</a>
+                                <a href="#" class="dropdown-item link_hover">Restauración lavadora</a>
+                                <a href="#" class="dropdown-item link_hover">Mecánica de motos</a>
+                                <a href="#" class="dropdown-item link_hover">Mecánica motosierra</a>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="#" class="dropdown-item link_hover">Mecánica bordadora</a>
+                                <a href="#" class="dropdown-item link_hover">Carpintería / Mueblista / Industrial</a>
+                                <a href="#" class="dropdown-item link_hover">Herrería</a>
+                                <a href="#" class="dropdown-item link_hover">Cajas de audio</a>
+                                <a href="#" class="dropdown-item link_hover">Consolas games</a>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="#" class="dropdown-item link_hover">Proyectos de electrónica</a>
+                                <a href="#" class="dropdown-item link_hover">Proyectos de iluminación</a>
+                                <a href="#" class="dropdown-item link_hover">Vehículos eléctricos</a>
+                            </div>
+
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main id="app">
         <!-- servicios -->
-        <section id="servicios" class="container">
+        <section id="servicios" class="container padding_section">
             
             <div>
                 <div>
@@ -274,7 +278,7 @@
                 <div class="row  padding_card gy-4">
 
                     <!-- electricidad -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Electricidad">
                             <img src="/public/rayo.webp" class="card-img-top d-block mx-auto img_card" alt="Electricidad">
                             <div class="card-body">
@@ -286,7 +290,7 @@
                     </div>
 
                     <!-- reparaciones electronicas -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Electronica">
                             <img src="/public/electronica.webp" class="card-img-top d-block mx-auto img_card" alt="Electronica">
                             <div class="card-body">
@@ -298,7 +302,7 @@
                     </div>
 
                     <!-- proyectos electronicos -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Proy_electronica">
                             <img src="/public/proyectos_electronicos.webp" class="card-img-top d-block mx-auto img_card" alt="Proyectos Electronicos">
                             <div class="card-body">
@@ -310,7 +314,7 @@
                     </div>
 
                     <!-- reparacion informatica -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Informatica">
                             <img src="/public/reparacion_informatica.webp" class="card-img-top d-block mx-auto img_card" alt="Informatica">
                             <div class="card-body">
@@ -322,7 +326,7 @@
                     </div>
 
                     <!-- carpinteria -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Carpinteria">
                             <img src="/public/carpinteria.webp" class="card-img-top d-block mx-auto img_card" alt="Carpinteria">
                             <div class="card-body">
@@ -334,7 +338,7 @@
                     </div>
 
                     <!-- mecanica -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Mecanica">
                             <img src="/public/mecanica.webp" class="card-img-top d-block mx-auto img_card" alt="Mecanica">
                             <div class="card-body">
@@ -346,7 +350,7 @@
                     </div>
 
                     <!-- instalacion antenas -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Antenas">
                             <img src="/public/antenas.webp" class="card-img-top d-block mx-auto img_card" alt="Instalacion de Antenas">
                             <div class="card-body">
@@ -358,7 +362,7 @@
                     </div>
 
                     <!-- herreria -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Herreria">
                             <img src="/public/herreria.webp" class="card-img-top d-block mx-auto img_card" alt="Herreria">
                             <div class="card-body">
@@ -370,7 +374,7 @@
                     </div>
 
                     <!-- Camaras y Alarmas -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Camaras">
                             <img src="/public/camaras.webp" class="card-img-top d-block mx-auto img_card" alt="Cámaras y Alarmas">
                             <div class="card-body">
@@ -382,7 +386,7 @@
                     </div>
 
                     <!-- Restauraciones -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Restauraciones">
                             <img src="/public/restauraciones.webp" class="card-img-top d-block mx-auto img_card" alt="Restauraciones">
                             <div class="card-body">
@@ -394,7 +398,7 @@
                     </div>
 
                     <!-- Lavadoras y Cocinas -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Lavadoras">
                             <img src="/public/cocinas_lavadoras.webp" class="card-img-top d-block mx-auto img_card" alt="Cocinas y Lavadoras">
                             <div class="card-body">
@@ -406,7 +410,7 @@
                     </div>
 
                     <!-- Vehiculos Electricos -->
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                         <div class="card" id="Vehiculos">
                             <img src="/public/vehiculos.webp" class="card-img-top d-block mx-auto img_card" alt="Vehículos Eléctricos">
                             <div class="card-body">
@@ -445,7 +449,7 @@
                             <p class="text-center sub_text">Cumplimos con los tiempos acortados y con total responsabilidad.</p>
                         </div>
 
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 sep_vertical">
                             <img src="/public/mano.webp" class="card-img-top d-block mx-auto img_" alt="Mano">
                             <p class="subTitulo_ text-center">Experiencia y confianza</p>
                             <p class="text-center sub_text">Años de experiencia nos respaldan y nuestros clientes nos recomiendan.</p>
@@ -456,7 +460,7 @@
         </div>
 
         <!-- nosotros -->
-        <section id="nosotros" class="container">
+        <section id="nosotros" class="container padding_section">
             <div class="background">
                 <div>
                     <h1 class="section_title">Sobre Nosotros</h1>
@@ -565,7 +569,7 @@
         </section>
 
         <!-- trabajos/galeria -->
-        <section id="trabajos" class="container">
+        <section id="trabajos" class="container padding_section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-4">
@@ -758,7 +762,7 @@
         </section>
 
         <!-- separador -->
-        <div class="fluid-container separador_2 d-flex align-items-center">
+        <div id="Contacto" class="fluid-container separador_2 d-flex align-items-center">
             <div class="row justify-content-center w-100">
                 <div class="col-8">
                     <div class="row gy-2">
