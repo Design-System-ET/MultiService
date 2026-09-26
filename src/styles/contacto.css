@@ -3,7 +3,7 @@
     width: 100%;
     padding-top: 50px;
     justify-content: center;
-    background-image: url("https://userscontent2.emaze.com/images/bdcf28ae-21e6-4c26-b2cd-015a89e29742/68ee0f7f6e2086df41d7cc1606cff7f4.png");
+    background-image: url("/contacto-bg.webp");
 }
 
 .form{
@@ -88,7 +88,7 @@ textarea {
 
 
 .header_contacto{
-    background-image: url("../assets/back_contacto.jpg");
+    background-image: url("../assets/back_contacto.webp");
     background-size: cover; 
     background-position:bottom;
     background-repeat: no-repeat;

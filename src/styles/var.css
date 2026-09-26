@@ -61,8 +61,8 @@
 
 
     /* IMAGE */
-    --Back_about: url("/src/assets/electro.jpg");
-    --Back_about_2: url("/src/assets/electro_2.jpg");
-    --Back_about_3: url("/src/assets/circuit_bg_4k.png");
+    --Back_about: url("/src/assets/electro.webp");
+    --Back_about_2: url("/src/assets/electro_2.webp");
+    --Back_about_3: url("/src/assets/circuit_bg_4k.webp");
 
 }
