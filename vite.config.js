@@ -37,8 +37,8 @@ export default defineConfig(({ mode }) => {
           short_name: "MS",
           description:
             "Soluciones integrales en electricidad, electrónica, carpintería, mecánica, herrería, informática y más.",
-          background_color: "#1a3c5e",
-          theme_color: "#1a3c5e",
+          background_color: "#ffffff",
+          theme_color: "#ffffff",
           display: "standalone",
           start_url: "/",
           icons: [
