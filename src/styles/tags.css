@@ -57,7 +57,7 @@ footer{
 }
 
 section {
-    min-height: 100vh;
+    min-height: 10vh;
     display: flex;
     align-items: top;
     justify-content: space-evenly;

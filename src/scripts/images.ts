@@ -12,6 +12,7 @@ import camarasImg from "/src/assets/camaras_.webp";
 import restauracionesImg from "/src/assets/restauraciones_.webp";
 import lavadorasImge from "/src/assets/lavadoras_cocinas_.webp";
 import vehiculosImg from "/src/assets/vehiculos_.webp";
+import reciclajeImg from "/src/assets/reciclaje_.webp";
 
 
 
@@ -27,4 +28,5 @@ export {
     camarasImg, 
     restauracionesImg, 
     lavadorasImge, 
-    vehiculosImg };
+    vehiculosImg,
+    reciclajeImg };

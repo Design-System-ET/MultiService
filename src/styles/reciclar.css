@@ -1,0 +1,137 @@
+.header_2{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    height: auto;
+    display: flex;
+    padding-bottom: 15px;
+    
+    flex: 0 0 auto;
+    background-image: url("/src/assets/reciclaje.webp");
+}
+
+.btn-primary_2{
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.btn-primary_2:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.titulo_0{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.titulo_1{
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.titulo_3{
+    color: var(--accent-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.titulo_2{
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.padding_rec{
+    padding-top: 2%;
+}
+
+.padding_top-rec{
+    padding-top: 5%;
+}
+
+.sub_rec{
+    color: var(--dark-primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sub_rec_1{
+    color: var(--dark-primary-color);
+    font-size: 1rem;
+}
+
+.donar{
+    background-color: var(--background-color);
+}
+
+.donar .row.gy-4 {
+    --bs-gutter-x: 2.5rem;
+}
+
+.margin_rec{
+    margin-top: 5%;
+}
+
+.margin_bottom-rec{
+    margin-bottom: 5%;
+}
+
+.sep_vertical-rec{
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.sep_vertical-rec::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background-color: var(--secundary-text-color);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.border_radius{
+    border-radius: var(--radius-xl);
+}
+
+
+/* Celulares */
+@media (max-width: 768px){
+    .padding_rec{
+        padding-top: 10%;
+    }
+
+    .margin_rec{
+        margin-top: 5%;
+    }
+
+    .padding_top-rec{
+        padding-top: 30%;
+    }
+
+}
+
+/* Tablet 7"–10" */
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .padding_rec{
+        padding-top: 30%;
+    }
+
+    .margin_rec{
+        margin-top: 5%;
+    }
+
+    .padding_top-rec{
+        padding-top: 30%;
+    }
+}

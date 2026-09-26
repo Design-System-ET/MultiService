@@ -223,6 +223,10 @@
 .card-body {
     padding: 0px; 
 }
+
+.accordion-item{
+    min-width: 100%;
+}
 /*----------------------------*/
 
 

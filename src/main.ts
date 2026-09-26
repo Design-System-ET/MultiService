@@ -9,6 +9,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 //import de los otros scripts
 import "./scripts/contacto";
+import "./scripts/reciclar";
 
 //import de images------------------------------
 import { 
